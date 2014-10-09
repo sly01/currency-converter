@@ -2,6 +2,7 @@ package com.example.currency_converter;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,6 +30,8 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		Log.v("MainActivity","Oncreate method");
 		
 		edittext_tl = (EditText) findViewById(R.id.editText_tl);
 		spinner_currency = (Spinner) findViewById(R.id.spinner_currency);
@@ -89,4 +92,42 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		Log.d("MainActivity", "onStart method");
+	}
+	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		Log.d("MainActivity", "onResume method");
+	}
+	
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		Log.d("MainActivity", "onPause method");
+	}
+	 
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		Log.d("MainActiviy", "onStop method");
+	}
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		Log.v("Mainactiviy", "onDestroy method");
+	}
+	
+	
+	
 }
