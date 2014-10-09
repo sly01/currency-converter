@@ -2,6 +2,13 @@
 <resources>
 
     <string name="app_name">Currency_Converter</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="currency_converter">Currency Converter</string>
+    
+    <string-array name="currency_array">
+        <item>Dollar</item>
+        <item>Euro</item>
+        <item>Gold</item>
+    </string-array>
+    	
 
 </resources>
