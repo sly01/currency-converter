@@ -26,7 +26,8 @@
     <TableRow
         android:id="@+id/tableRow2"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
+        android:layout_height="fill_parent"
+        android:gravity="center" >
         <TextView 
             android:id="@+id/textView1"
             android:layout_width="fill_parent"
